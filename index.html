@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function setUsername(){
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+
+        function setProfileImage(){
+            document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("profileimg").value + ")";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img" id="profileImage">
+            </div>
+            <div class="noti">6</div>
+        </div>
+        <div class="username">
+            <a href="https://www.youtube.com/watch?v=vY6UiUDPuMk" class="onhover">
+            <p style="font-size: x-large; font-weight: 700;" id="username-p">Thanat's gallery</p>
+        </a>
+        </div>
+        <div class="input-group">
+            <div><label style="font-size: x-large; font-weight: 400;">Username</label>
+                <input style="margin-left: 10px;" type="text" id="username">
+                <button id="setUsername" onclick="setUsername()">Apply</button>
+            </div>
+            <div><label style="font-size: x-large; font-weight: 400;">Profile-img</label>
+                <input style="margin-left: 10px;" type="text" id="profileimg">
+                <button id="setProfile-img" onclick="setProfileImage()">Apply</button>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span"><img src="https://inwfile.com/s-p/aq7ref.jpg" class="imgs"></div>
+            <div class="gallery-item"><img src="https://w0.peakpx.com/wallpaper/287/720/HD-wallpaper-let-the-game-begin-kuroko-no-basket-kuroko-no-basket-characters-kuroko-s-basketball-kuroko-no-basket-midorima.jpg" class="imgs"></div>
+            <div class="gallery-item"><img src="https://1417094351.rsc.cdn77.org/articles/6427/6426581/thumbnail/large.gif?1" class="imgs"></div>
+            <div class="gallery-item"><img src="https://thicc.mywaifulist.moe/waifus/16455/d7849b435eebac8354be003ae844a58bed08416bb41bbad7cbc2a7065193211a_thumb.jpg" class="imgs"></div>
+            <div class="gallery-item row-span"><img src="https://ih1.redbubble.net/image.4269492304.9176/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" class="imgs"></div>
+            <div class="gallery-item"><img src="https://diamondpaintkit.com/wp-content/uploads/2021/11/kageyama-tobio-Haikyuu-diamond-painting-1.jpg" class="imgs"></div>
+            <div class="gallery-item"><img src="https://i.pinimg.com/736x/a7/1b/e1/a71be198484f5c1f947a9278f0cd4f27.jpg" class="imgs"></div>
+            <div class="gallery-item"><img src="https://upload.wikimedia.org/wikipedia/th/0/01/Kaito_Kid.jpg" class="imgs"></div>
+            <div class="gallery-item"><img src="https://pbs.twimg.com/media/D59pxshUUAY1nih.jpg" class="imgs"></div>
+            <div class="gallery-item"><img src="https://cf.shopee.co.th/file/8cf843dbe0749e9afdd83b8f3e90d6e5" class="imgs"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
